@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tago</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/popup.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="assets/Curriculo_Tiago_Bettega.pdf" download><span>Baixar curriculo</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="inicio">
+        <div class="container">
+            <img id="imgTago" src="img/tago.jpg" alt="imgTago">
+            <h1>Tago</h1>
+            <h3>Pessoa desenvolvedora Front-End</h3>
+        </div>
+    </section>
+
+    <section id="sobre">
+            <h2>Sobre</h2>
+            <hr>
+        <div class="container">
+            <p>
+                Meu nome é <span>Tiago Bettega</span>, possuo um portfólio próprio com minhas 
+                criações e desenvolvo sites em <span>“HTML”</span>,<span> “CSS”</span> e <span>“JS”</span>. Já desenvolvi 
+                algumas interfaces de usuário <span>(UX/UI)</span> para empresas, e sempre estou 
+                aprendendo e melhorando minhas habilidades em <span>“Batch Script”</span> para 
+                automação de tarefas no sistema operacional Windows. O <span>“ZSH”</span>, mesmo 
+                com <span>“WERL”</span> e <span>“PSQL”</span> me ajudou a dar o passo inicial para a melhora 
+                constante do meu aprendizado e minha carreira profissional, assim me 
+                capacitando para automatizar alguns processos e tarefas nessas condições. 
+                Tenho meu próprio jeito. Mas aprendi muito sobre <span>programação</span>, desenvolvimento 
+                web e coisas que outras pessoas fazem pelo trabalho.
+            </p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <img src="img/portifolio_01.png" alt="portfolio-01" width="500px">
+                    <div class="portfolio-item-info">
+                        <h3>Filetech</h3>
+                        <p>
+                            Site para a empresa Filetech, desenvolvido em <span>HTML</span>, <span>CSS</span> e <span>JS</span>.
+                        </p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/portifolio_02.png" alt="portfolio-02" width="500px">
+                    <div class="portfolio-item-info">
+                        <h3><a href="assets/Gerador/index.html" target="_blank">PWGEN</a></h3>
+                        <p>
+                            Site que gera uma senha aleatória, desenvolvido em <span>HTML</span>, <span>CSS</span> e <span>JS</span>.
+                        </p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/portifolio_03.png" alt="portfolio-03" width="500px">
+                    <div class="portfolio-item-info">
+                        <h3>Boost</h3>
+                        <p>
+                            Tweaker para limpeza feito em <span>Batch Script</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <hr>
+            <form action="https://formsubmit.co/tiagobettega.gk@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" name="name" placeholder="Digite seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" name="email" placeholder="Endereço de email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="confirma()">Enviar</button>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>
+                Tiago Bettega - Desenvolvedor Web
+            </p>
+                <a href="https://github.com/ObvTago" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/tiagobettega/" target="_blank">linkedin</a><br>
+            <span>Todos os direitos reservados.</span>
+        </div>
+    </footer>
+</body>
+</html>
