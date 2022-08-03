@@ -34,51 +34,62 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    text-align: center;
     z-index: 100;
     width: 100%;
     background-color: #0c0c0c;
     color: #fff;
-    padding: 10px;
     border-bottom: #7700ff 2px solid;
 }
-nav ul{
+.nav-bar{
     display: flex;
     justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: center;
     list-style: none;
 }
-nav ul li{
-    display: inline-block;
-    padding: 10px;
-    cursor: pointer;
+.nav-item{
+    margin: 0px 15px;
 }
-nav ul li a{
-    color: #7700ff;
+.nav-link{
     text-decoration: none;
-    transition: color 0.3s;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
 }
-nav ul li a:hover{
-    color: #b26eff;
+.curriculo-btn button{
+    border: none;
+    background: #5100ad;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.curriculo-btn button a{
     text-decoration: none;
-}
-nav ul li a span{
-    color: #fff; 
+    color: #fff;
     font-weight: bold;
-    border-bottom: #380079 3px solid;
-    border-radius: 10px;
-    background: #7700ff;
-    padding: 10px 20px;
-    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
 }
-nav ul li a span:hover{
-    box-shadow: #7700ff 0px 0px 10px;
-    color: #c4c4c4;
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu {
+    display: none;
 }
 
 #inicio{
     display: flex;
     align-items: center;
-    height: 500px;
+    height: 100vh;
     padding-bottom: 9.5%;
     border-bottom: #7700ff 2px solid;
 }
@@ -175,6 +186,8 @@ nav ul li a span:hover{
 .portfolio-container img{
     border: #7700ff 2px solid;
     margin-top: 30px;
+    width: 500px;
+    height: auto;
 }
 .portfolio-item h3{
     color: #7700ff;
@@ -280,4 +293,55 @@ footer span{
     font-size: 12px;
     color: #fff;
     font-weight: bold;
+}
+
+
+@media screen and (max-width: 999px){
+    .nav-bar{
+        padding: 1.5rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .curriculo-btn{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .curriculo-btn{
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .curriculo-btn button{
+        width: 100%;
+    }
+    .open{
+        display: block;
+    }
+
+    .portfolio-container img{
+        width: 300px;
+        height: auto;
+    }
+    .portfolio-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
 }
