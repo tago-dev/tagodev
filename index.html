@@ -9,20 +9,44 @@
     <!-- Links -->
     <link rel="icon" type="image/x-icon" href="img/crescent-moon.ico">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/popup.js"></script>
+    
 </head>
 <body>
     <header>
         <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#portfolio">Portfólio</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                    <li><a href="assets/Curriculo_Tiago_Bettega.pdf" download><span>Baixar curriculo</span></a></li>
-                </ul>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <h1>Tago</h1>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="curriculo-btn">
+                    <button><a href="assets/Curriculo_Tiago_Bettega.pdf" download>Baixar curriculo</a></button>
+                </div>
+
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg"></button>
+                </div>
             </nav>
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                </ul>
+
+                <div class="curriculo-btn">
+                    <button><a href="assets/Curriculo_Tiago_Bettega.pdf" download>Baixar curriculo</a></button>
+                </div>
+            </div>
         </div>
     </header>
     <section id="inicio">
@@ -56,20 +80,20 @@
         <div class="container">
             <div class="portfolio-container">
                 <div class="portfolio-item">
-                    <img src="img/portifolio_01.png" alt="portfolio-01" width="500px">
+                    <img src="img/portifolio_01.png" alt="portfolio-01">
                     <div class="portfolio-item-info">
                         <h3>Filetech</h3>
                         <p>
-                            Site para a empresa Filetech, desenvolvido em <span>HTML</span>, <span>CSS</span> e <span>JS</span>.
+                            Site para a empresa Filetech, <br>desenvolvido em <span>HTML</span>, <span>CSS</span> e <span>JS</span>.
                         </p>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="img/portifolio_02.png" alt="portfolio-02" width="500px">
+                    <img src="img/portifolio_02.png" alt="portfolio-02">
                     <div class="portfolio-item-info">
                         <h3><a href="assets/Gerador/index.html" target="_blank">PWGEN</a></h3>
                         <p>
-                            Site que gera uma senha aleatória, desenvolvido em <span>HTML</span>, <span>CSS</span> e <span>JS</span>.
+                            Site que gera uma senha aleatória, <br>desenvolvido em <span>HTML</span>, <span>CSS</span> e <span>JS</span>.
                         </p>
                     </div>
                 </div>
@@ -120,5 +144,8 @@
             <span>Todos os direitos reservados.</span>
         </div>
     </footer>
+
+    <script src="js/popup.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
