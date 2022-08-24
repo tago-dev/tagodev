@@ -66,12 +66,21 @@ header{
     font-size: 1.15rem;
     color: #fff;
     font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+.nav-link:hover{
+    color: #7700ff;
 }
 .curriculo-btn button{
     border: none;
     background: #5100ad;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 0 10px 0 10px;
+    transition: all 0.3s ease-in-out;
+}
+.curriculo-btn button:hover{
+    background: #7700ff;
+    border-radius: 10px 0 10px 0;
 }
 .curriculo-btn button a{
     text-decoration: none;
@@ -91,7 +100,6 @@ header{
     align-items: center;
     height: 100vh;
     padding-bottom: 9.5%;
-    border-bottom: #7700ff 2px solid;
 }
 #inicio img{
     width: 200px;
@@ -137,7 +145,6 @@ header{
     justify-content: center;
     height: auto;
     background-color: #0c0c0c;
-    border-bottom: #7700ff 2px solid;
 }
 #sobre h2{
     font-size: 40px;
@@ -159,7 +166,7 @@ header{
 }
 #sobre span{
     font-size: 20px;
-    color: #7700ff;
+    color: #ba7dff;
     margin-top: 30px;
     text-align: center;
 }
@@ -210,7 +217,6 @@ header{
     justify-content: center;
     height: auto;
     background-color: #0c0c0c;
-    border-top: #7700ff 2px solid;
     border-bottom: #7700ff 2px solid;
 }
 #contato h2{
@@ -282,7 +288,6 @@ footer{
     background-color: #0c0c0c;
     color: #fff;
     padding: 40px;
-    border-bottom: #7700ff 2px solid;
 }
 footer a{
     color: #7700ff;
