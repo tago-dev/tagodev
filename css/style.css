@@ -99,19 +99,26 @@ header{
     display: flex;
     align-items: center;
     height: 100vh;
-    padding-bottom: 9.5%;
+    border-bottom: solid 5px #380079;
 }
-#inicio img{
+.imgTago{
     width: 200px;
     height: 200px;
     border-radius: 50%;
     border: #7700ff 6px solid;
-    margin-top: 100px;
+    margin-top: 30px;
     animation: fadeIn 2s ease-in-out; /* Animation */
 }
-#inicio img:hover{
+.imgTago:hover{
     box-shadow: #7700ff 0 0 10px;
 }
+.bg {
+    margin-top: 50px;
+    padding: 0 20px 50px 40px;
+    background: rgba(0, 0, 0, 0.699);
+    border-radius: 10px;
+}
+
 #inicio h1{
     font-size: 80px;
     color: #7700ff;
@@ -300,12 +307,13 @@ footer span{
     color: #fff;
     font-weight: bold;
 }
-#bgVideoInicio {
-    position: fixed;
+.bgGif {
+    position: absolute;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    z-index: -100;
 }
 
 
