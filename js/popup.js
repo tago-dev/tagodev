@@ -1,5 +1,5 @@
 function confirma() {
-    var comfirma = "Formulario enviado com sucesso!";
-    alert(comfirma);
+    var confirma = "Formulario enviado com sucesso!";
+    alert(confirma);
     return 0;
 }
