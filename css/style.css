@@ -4,6 +4,8 @@
 }
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+
 }
 ::selection {
     background: #5100ad;
