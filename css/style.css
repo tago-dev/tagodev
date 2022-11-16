@@ -23,7 +23,7 @@ html{
 }
 
 body{
-    background-color: #000;
+    background-color: #252525;
     font-family: Arial, Helvetica, sans-serif;
 }
 .container{
@@ -32,13 +32,13 @@ body{
     padding: 0 20px;
 }
 header{
-    position: fixed;
+    
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
     width: 100%;
-    background-color: #0c0c0c;
+    background-color: #252525;
     color: #fff;
     border-bottom: #7700ff 2px solid;
 }
@@ -101,7 +101,7 @@ header{
     display: flex;
     align-items: center;
     height: 100vh;
-    border-bottom: solid 5px #380079;
+    border-bottom: solid 1px #380079;
 }
 .imgTago{
     width: 200px;
@@ -117,7 +117,7 @@ header{
 .bg {
     margin-top: 50px;
     padding: 0 20px 50px 40px;
-    background: rgba(0, 0, 0, 0.699);
+    background: rgba(25, 25, 25, 0.699);
     border-radius: 10px;
 }
 
@@ -154,7 +154,8 @@ header{
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: #0c0c0c;
+    background-color: #1d1d1d;
+    border-bottom: #380079 1px solid;
 }
 #sobre h2{
     font-size: 40px;
@@ -186,12 +187,27 @@ header{
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: #0c0c0c;
+    background-color: #252525;
 }
-#portifolio h2{
+.sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: #252525;
+}
+.sub h2{
     font-size: 40px;
     color: #7700ff;
+    margin-top: 30px;
     text-transform: uppercase;
+}
+.sub hr{
+    width: 12%;
+    border: #7700ff 2px solid;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .portfolio-container{
     display: flex;
@@ -205,6 +221,12 @@ header{
     margin-top: 30px;
     width: 500px;
     height: auto;
+    transition: all 0.3s ease-in-out;
+}
+.portfolio-container img:hover{
+    /* aumentar a img */
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
 }
 .portfolio-item h3{
     color: #7700ff;
@@ -226,8 +248,9 @@ header{
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: #0c0c0c;
-    border-bottom: #7700ff 2px solid;
+    background-color: #1d1d1d;
+    border-top: #380079 1px solid;
+    border-bottom: #380079 2px solid;
 }
 #contato h2{
     font-size: 40px;
@@ -249,7 +272,7 @@ header{
 #contato input{
     width: 255px;
     height: 40px;
-    background: #0c0c0c;
+    background: #252525;
     border: #7700ff 2px solid;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -267,7 +290,7 @@ header{
     width: 250px;
     height: 100px;
     padding: 5px;
-    background: #0c0c0c;
+    background: #252525;
     border: #7700ff 2px solid;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -295,7 +318,7 @@ header{
 
 footer{
     text-align: center;
-    background-color: #0c0c0c;
+    background-color: #252525;
     color: #fff;
     padding: 40px;
 }
@@ -366,5 +389,31 @@ footer span{
         display: flex;
         justify-content: center;
         width: 100%;
+    }
+    .portfolio-item {
+        width: 300px;
+        height: auto;
+        margin: 0 1rem;
+    }
+    #contato input{
+        width: 100%;
+        margin-left: 0;
+    }
+    #contato textarea{
+        width: 100%;
+        margin-left: 0;
+    }
+    #contato button{
+        width: 100%;
+        margin-left: 0;
+    }
+    #contato label{
+        margin-left: 0;
+    }
+    #contato h2{
+        margin-left: 0;
+    }
+    #contato hr{
+        margin-left: -8px;
     }
 }
